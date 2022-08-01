@@ -46,6 +46,7 @@ const NFTList = () => {
    return <>
    	<h2>nfts</h2>
 	{nfts.map(({name, token_id: tokenId, contract_type, token_hash}: MoralisNFT, key) => {
+		// todo: show a pic
 		return <div key={key}>
 			<h5>{name}: {tokenId}</h5>
 			<p>{token_hash} ({contract_type})</p>
